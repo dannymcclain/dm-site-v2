@@ -1,20 +1,9 @@
 import Head from 'next/head';
 import Emoji from 'a11y-react-emoji';
+import Projects from '../components/Projects.js';
 import '../styles/styles.scss';
 
 const fruit = require('../static/fruit.json');
-
-
-Object.keys(fruit.projects).forEach(function (item) {
-  // console.log(item); // key
-  // console.log(fruit.projects[item]); // value
-  return (
-    <li><a href={`${fruit.projects[item].url}`} target="_blank">{`${fruit.projects[item].title}`}</a></li>
-  )
-  console.log(fruit.projects[item].title);
-  console.log(fruit.projects[item].url);
-  });
-
 
 export default () => (
   <div className="app">
@@ -60,22 +49,8 @@ export default () => (
       <h2>
         Misc. Projects <Emoji symbol="🚀" />
       </h2>
-      <ul>
-        <li>
-          <a href="https://fittoparent.dannymcclain.com" target="_blank">
-            Fit to Parent
-          </a>
-        </li>
-        <li>
-          <a href="https://swap-width-height.dannymcclain.com" target="_blank">
-            Swap Width &amp; Height
-          </a>
-        </li>
-        {/* COMING SOON <li>
-          <a href="" target="_blank">
-            DoodleFrame UI Kit
-          </a>
-        </li> */}
+      <ul className="project-list"> 
+        <Projects />
         <li>
           <a href="https://pensive-joliot-ed3c84.netlify.com" target="_blank">
             Ratio
