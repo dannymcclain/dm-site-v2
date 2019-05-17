@@ -3,7 +3,7 @@ import Emoji from 'a11y-react-emoji';
 import Projects from '../components/Projects.js';
 import '../styles/styles.scss';
 
-const fruit = require('../static/fruit.json');
+const content = require('../static/content.json');
 
 export default () => (
   <div className="app">
@@ -35,33 +35,21 @@ export default () => (
     <div className="border" />
     <header>
       <h1>
-        {fruit.header.headline}
+        {content.header.headline}
       </h1>
       <p>
-        {fruit.header.text}
+        {content.header.text}
       </p>
     </header>
     <section className="about">
-      <h2>{fruit.about.headline}</h2>
-      <p>{fruit.about.text}</p>
+      <h2>{content.about.headline}</h2>
+      <p>{content.about.text}</p>
     </section>
     <section className="projects">
       <h2>
         Misc. Projects <Emoji symbol="🚀" />
       </h2>
-      <ul className="project-list"> 
-        <Projects />
-        <li>
-          <a href="https://pensive-joliot-ed3c84.netlify.com" target="_blank">
-            Ratio
-          </a>
-        </li>
-        <li>
-          <a href="https://frosty-hypatia-1693bf.netlify.com" target="_blank">
-            Grid Calc
-          </a>
-        </li>
-      </ul>
+      <Projects />
       <p>
         View more of my work on{' '}
         <a href="https://dribbble.com/dannymcclain" target="_blank">
