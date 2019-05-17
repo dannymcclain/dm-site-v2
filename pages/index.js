@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Emoji from 'a11y-react-emoji';
 import Projects from '../components/Projects.js';
+import Links from '../components/Links.js';
 import '../styles/styles.scss';
 
 const content = require('../static/content.json');
@@ -75,28 +76,7 @@ export default () => (
       <h2>
         Links <Emoji symbol="🔗" />
       </h2>
-      <ul>
-        <li>
-          <a href="https://dribbble.com/dannymcclain" target="_blank">
-            Dribbble
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/dannymcclain" target="_blank">
-            GitHub
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/dannymcclain" target="_blank">
-            Twitter
-          </a>
-        </li>
-        <li>
-          <a href="mailto:dannyxmcclain@gmail.com" target="_blank">
-            Email
-          </a>
-        </li>
-      </ul>
+      <Links />
     </section>
   </div>
 );
