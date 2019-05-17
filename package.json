@@ -12,15 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/dannymcclain/dm-site-v2.git"
   },
   "keywords": [],
   "author": "@dannymcclain",
   "license": "ISC",
-  "bugs": {
-    "url": ""
-  },
-  "homepage": "",
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
     "a11y-react-emoji": "^1.0.0",

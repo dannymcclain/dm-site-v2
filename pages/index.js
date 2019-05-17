@@ -4,8 +4,6 @@ import Projects from '../components/Projects.js';
 import Links from '../components/Links.js';
 import '../styles/styles.scss';
 
-const content = require('../static/content.json');
-
 export default () => (
   <div className="app">
     <Head>
@@ -36,15 +34,16 @@ export default () => (
     <div className="border" />
     <header>
       <h1>
-        {content.header.headline}
+        Danny McClain <Emoji symbol="🤙" />
       </h1>
       <p>
-        {content.header.text}
+      Digital product designer who likes to build stuff too. Always learning because learning is fun!
       </p>
     </header>
     <section className="about">
-      <h2>{content.about.headline}</h2>
-      <p>{content.about.text}</p>
+      <h2>About <Emoji symbol="📓" /></h2>
+      <p>I design apps and interfaces that work well, look nice, and feel good.</p>
+      <p>I like systems, icons, typography, strategy, designing based on research, iterating constantly, and shipping.</p>
     </section>
     <section className="projects">
       <h2>
