@@ -1,0 +1,111 @@
+*,
+*::after,
+*::before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+#__next,
+.app {
+  height: 100%;
+  height: 100%; }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 100px; }
+
+.border {
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(270deg, #ff6666, #bd69f6, #5176ff, #44d8bb, #ffd00f, #fc88cd);
+  background-size: 800% 800%;
+  -webkit-animation: gradient-border 10s ease infinite;
+  -moz-animation: gradient-border 10s ease infinite;
+  animation: gradient-border 10s ease infinite;
+  position: fixed;
+  margin-bottom: 5px; }
+
+@-webkit-keyframes gradient-border {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@-moz-keyframes gradient-border {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes gradient-border {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+body {
+  font-family: 'Overpass Mono', monospace;
+  font-weight: 400;
+  background: #fff;
+  color: #242a31;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0; }
+
+header,
+section {
+  margin: 80px 80px 0;
+  max-width: 400px; }
+
+h1,
+h2 {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #242a31;
+  text-transform: uppercase; }
+
+ul {
+  list-style: none;
+  margin-top: 20px; }
+  ul li {
+    margin-bottom: 4px; }
+  ul li:last-child {
+    margin-bottom: 0; }
+
+p {
+  margin-top: 20px; }
+
+a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0;
+  color: #242a31;
+  text-decoration: none;
+  border-bottom: 1px dotted #242a31;
+  background: transparent; }
+  a:hover {
+    border-bottom: 1px solid #242a31;
+    font-weight: 700; }
+  a:active {
+    border-bottom: 1px solid #ff6666;
+    color: #ff6666; }
+
+@media (max-width: 560px) {
+  header,
+  section {
+    margin: 40px 40px 0; } }
+
