@@ -1,5 +1,5 @@
 {
-  "name": "dannymcclain.github.io",
+  "name": "dm-site-v2",
   "version": "1.0.0",
   "description": "Personal site of digital product designer Danny McClain",
   "main": "index.js",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dannymcclain/dannymcclain.github.io.git"
+    "url": ""
   },
   "keywords": [],
   "author": "@dannymcclain",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dannymcclain/dannymcclain.github.io/issues"
+    "url": ""
   },
-  "homepage": "https://dannymcclain.com",
+  "homepage": "",
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
     "a11y-react-emoji": "^1.0.0",

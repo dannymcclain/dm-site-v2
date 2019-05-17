@@ -34,15 +34,55 @@ $accent: #ff6666;
 .border {
   height: 5px;
   width: 100%;
-  background-image: linear-gradient(
-    90deg,
-    #ff6666 0%,
-    #bd69f6 20%,
-    #5176ff 41%,
-    #44d8bb 60%,
-    #ffd00f 80%,
-    #fc88cd 100%
+
+  background: linear-gradient(
+    270deg,
+    #ff6666,
+    #bd69f6,
+    #5176ff,
+    #44d8bb,
+    #ffd00f,
+    #fc88cd
   );
+  background-size: 800% 800%;
+
+  -webkit-animation: gradient-border 10s ease infinite;
+  -moz-animation: gradient-border 10s ease infinite;
+  animation: gradient-border 10s ease infinite;
+
+  @-webkit-keyframes gradient-border {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @-moz-keyframes gradient-border {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes gradient-border {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
   position: fixed;
   margin-bottom: 5px;
 }
