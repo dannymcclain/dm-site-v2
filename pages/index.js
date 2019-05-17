@@ -2,6 +2,20 @@ import Head from 'next/head';
 import Emoji from 'a11y-react-emoji';
 import '../styles/styles.scss';
 
+const fruit = require('../static/fruit.json');
+
+
+Object.keys(fruit.projects).forEach(function (item) {
+  // console.log(item); // key
+  // console.log(fruit.projects[item]); // value
+  return (
+    <li><a href={`${fruit.projects[item].url}`} target="_blank">{`${fruit.projects[item].title}`}</a></li>
+  )
+  console.log(fruit.projects[item].title);
+  console.log(fruit.projects[item].url);
+  });
+
+
 export default () => (
   <div className="app">
     <Head>
@@ -32,24 +46,15 @@ export default () => (
     <div className="border" />
     <header>
       <h1>
-        Danny McClain <Emoji symbol="🤙" />
+        {fruit.header.headline}
       </h1>
       <p>
-        Digital product designer who likes to build stuff too. Always learning
-        because learning is fun!
+        {fruit.header.text}
       </p>
     </header>
     <section className="about">
-      <h2>
-        About <Emoji symbol="📓" />
-      </h2>
-      <p>
-        I design apps and interfaces that work well, look nice, and feel good.
-      </p>
-      <p>
-        I like systems, icons, typography, strategy, designing based on
-        research, iterating constantly, and shipping.
-      </p>
+      <h2>{fruit.about.headline}</h2>
+      <p>{fruit.about.text}</p>
     </section>
     <section className="projects">
       <h2>
