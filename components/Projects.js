@@ -11,14 +11,20 @@ const projects = fruit.projects;
 // }};
 
 function list() {
-  for (var i = 0; i <= projects.length; i++) {
+  for (var i = 0; i < projects.length; i++) {
     console.log(projects[i], i);
-    return (<li><a href={projects[i].url} target="_blank">{projects[i].title}</a></li>);
+    // return (<li><a href={projects[i].url} target="_blank">{projects[i].title}</a></li>);
 }
 };
 
+function makeList () {
+  return projects.map((item, i) => (
+    <li key={i}><a href={item.url} target="_blank">{item.title}</a></li>
+  ));
+}
+
 export default () => (
   <ul>
-    {list()}
+    {makeList()}
   </ul>
 );
