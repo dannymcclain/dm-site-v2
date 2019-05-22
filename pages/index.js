@@ -43,7 +43,8 @@ export default () => (
     <section className="about">
       <h2>About <Emoji symbol="📓" /></h2>
       <p>I design apps and interfaces that work well, look nice, and feel good.</p>
-      <p>I like systems, icons, typography, strategy, designing based on research, iterating constantly, and shipping.</p>
+      <p>I like systems, icons, typography, strategy, research-based solutions, releasing fast and iterating often, and making stuff that solves problems.</p>
+      <p>I’m also weirdly passionate about efficiency and organization.</p>
     </section>
     <section className="projects">
       <h2>
